@@ -16,17 +16,18 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Hi</h1>
+      <h1>{count > 0 ? "why." : "there is a button below this. do not press it."}</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
         <p id='count-text'>
           {count > 0 ? "now why would you do that?" : "don't click this button."}
+
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the logos and they will lead somewhere
+        {count > 0 ? "Click on the logos and they will lead somewhere interesting. You had to press it..." : "Click on the logos and they will lead somewhere interesting. Also, don't click that button above this."}        
       </p>
     </>
   )
