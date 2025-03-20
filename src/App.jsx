@@ -21,8 +21,8 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>
-          is this thing on?
+        <p id='count-text'>
+          {count > 0 ? "now why would you do that?" : "don't click this button."}
         </p>
       </div>
       <p className="read-the-docs">
